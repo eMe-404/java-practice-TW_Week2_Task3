@@ -14,12 +14,12 @@ class PracticeB {
     }
 
     private void countElements(String str, HashMap<String, Integer> result) {
-        String[] split = str.split("-");
+        String[] split = str.split("\\W");
 
         String elemet = split[0];
         int count = split.length == 2 ? Integer.parseInt(split[1]) : 1;
 
-        if (result.containsKey(split[0])) {
+        if (result.containsKey(elemet)) {
             int countAfterChange = result.get(str) + count;
             result.put(elemet, countAfterChange);
         } else {
