@@ -24,7 +24,7 @@ public class PracticeATest {
 
         List<String> result = practiceA.collectSameElements(collection1, collection2);
         String[] expectedResult = new String[]{"a", "e", "f", "d"};
-        assertArrayEquals(result.toArray(), expectedResult);
+        assertArrayEquals(expectedResult, result.toArray());
     }
 
 }

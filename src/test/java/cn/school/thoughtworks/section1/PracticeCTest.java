@@ -23,11 +23,11 @@ public class PracticeCTest {
         //选出1集合中跟2对象中value属性中的元素相同的元素
         List<String> collection1 = Arrays.asList("a", "e", "h", "t", "f", "c", "g", "b", "d");
         List<String> list = Arrays.asList("a", "d", "e", "f");
-        Map<String,List<String>> collection2 = new HashMap<>();
-        collection2.put("value",list);
+        Map<String, List<String>> collection2 = new HashMap<>();
+        collection2.put("value", list);
 
         List<String> result = practiceC.collectSameElements(collection1, collection2);
         List<String> expectedResult = Arrays.asList("a", "e", "f", "d");
-        assertEquals(result, expectedResult);
+        assertEquals(expectedResult, result);
     }
 }

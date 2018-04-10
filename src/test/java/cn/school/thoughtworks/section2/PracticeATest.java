@@ -46,7 +46,7 @@ public class PracticeATest {
         }};
 
         Map<String, Integer> result = practiceA.countSameElements(collection1);
-        assertEquals(result, expectedResult);
+        assertEquals(expectedResult, result );
     }
 
 }
