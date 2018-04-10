@@ -16,11 +16,9 @@ class PracticeA {
     private void countElement(String str, HashMap<String, Integer> result) {
 
         if (result.containsKey(str)) {
-            int count = result.get(str);
-            count ++;
+            int count = result.get(str) + 1;
             result.put(str, count);
-        }
-        else {
+        } else {
             result.put(str, 1);
         }
     }
