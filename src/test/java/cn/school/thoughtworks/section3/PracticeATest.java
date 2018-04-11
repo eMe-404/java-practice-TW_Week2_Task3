@@ -14,12 +14,12 @@ public class PracticeATest {
     private PracticeA practiceA = null;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         practiceA = new PracticeA();
     }
 
     @Test
-    public void create_update_collection_should_return_a_new_map_with_element_as_key_and_count_as_value() throws Exception {
+    public void create_update_collection_should_return_a_new_map_with_element_as_key_and_count_as_value() {
         //选出1集合中元素的key的值跟2对象中value属性中的元素相同的元素,把他们的count-1，输出减过之后的新集合
         Map<String, Integer> collection1 = new HashMap<String, Integer>() {{
             put("a", 2);
@@ -50,6 +50,6 @@ public class PracticeATest {
             put("d", 1);
         }};
 
-        assertEquals(result, expectedResult);
+        assertEquals(expectedResult, result);
     }
 }
