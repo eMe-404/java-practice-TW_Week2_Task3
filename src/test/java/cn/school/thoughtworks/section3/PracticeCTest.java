@@ -50,6 +50,6 @@ public class PracticeCTest {
             put("d", 4);
         }};
 
-        assertEquals(result, expectedResult);
+        assertEquals(expectedResult, result);
     }
 }
