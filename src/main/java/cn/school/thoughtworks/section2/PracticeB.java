@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class PracticeB {
-    Map<String, Integer> countSameElements(List<String> collection1) {
+public class PracticeB {
+    public Map<String, Integer> countSameElements(List<String> collection1) {
         //实现练习要求，并改写该行代码。
         HashMap<String, Integer> result = new HashMap<>();
         collection1.forEach(str -> countElements(str, result));
